@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Replace ActionBar by Toolbar -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:textColor">@color/app_text</item>
+        <item name="android:typeface">sans</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue_dark</item>
+        <item name="colorAccent">@color/pink</item>
+    </style>
+
+    <style name="customEditText" parent="android:Widget.EditText">
+        <item name="android:background">@color/pale_blue</item>
+        <item name="android:padding">@dimen/paddingWidget</item>
+    </style>
+
+    <style name="customEditText.center">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/accounts">
+        <Preference android:title="@string/manage_accounts">
+            <intent
+                android:targetPackage="com.epsilon.coders.budgetbiuldert"
+                android:targetClass="com.epsilon.coders.budgetbiulder.Settings.ManageAccountActivity" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/backup">
+        <Preference android:title="@string/export_data"
+            android:key="export_data"/>
+        <Preference android:title="@string/import_data"
+            android:key="import_data"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

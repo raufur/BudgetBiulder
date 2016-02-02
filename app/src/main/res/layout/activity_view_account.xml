@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.epsilon.coders.budgetbiulder.Settings.ViewAccount">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/account_edit"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/blue"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/account_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/no_image"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_below="@id/account_image"/>
+
+        <EditText
+            android:id="@+id/account_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@id/account_name"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:text="@string/delete"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

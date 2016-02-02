@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.epsilon.coders.budgetbiulder">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TransactionActionActivity"
+            android:label="@string/title_activity_add_transaction"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".AddUpgradeTransactionActivity"
+            android:label="@string/title_activity_add_upgrade_transaction"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".Settings.ManageAccountActivity"
+            android:label="@string/title_activity_manage_account"
+            android:parentActivityName=".Settings.SettingActivity" >
+        </activity>
+        <activity
+            android:name=".Settings.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings.ViewAccount"
+            android:label="@string/title_activity_view_account" >
+        </activity>
+    </application>
+
+</manifest>

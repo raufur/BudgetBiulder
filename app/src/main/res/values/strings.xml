@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App name -->
+    <string name="app_name">BudgetBuilder</string>
+
+    <!-- Activity and Fragments -->
+    <string name="title_activity_manage_account">Manage accounts</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="title_activity_add_transaction">Add new transaction</string>
+    <string name="title_activity_add_upgrade_transaction">Add upgrade transaction</string>
+    <string name="title_activity_splash_screen">BudgetBuilder</string>
+    <string name="title_activity_view_account">Account</string>
+
+    <string name="title_fragment_overview">Overview</string>
+    <string name="title_fragment_transaction">Transactions</string>
+    <string name="title_fragment_recurring_transaction">Recurring transactions</string>
+    <string name="title_fragment_category">Categories</string>
+
+    <!-- Navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Action bar buttons / Titles -->
+    <string name="view_transaction">Transaction</string>
+    <string name="edit_transaction">Edit transaction</string>
+    <string name="delete_transaction">Delete transaction(s)</string>
+
+    <!-- Various UI elements -->
+    <string name="done">Done</string>
+    <string name="repeat">Repeat ?</string>
+    <string name="euro">€</string>
+    <string name="total_amount">Total balance</string>
+    <string name="real_amount">Current balance</string>
+    <string name="add">Add</string>
+    <string name="every">Every</string>
+    <string name="number_of_recurrence">Payment count</string>
+    <string name="hint_number_of_recurrence">-1 for ∞</string>
+    <string name="first_payment">First payment:</string>
+    <string name="paid">Paid:</string>
+    <string name="of">of</string>
+    <string name="infinite_payment">∞ payments</string>
+    <string name="payments">payments</string>
+    <string name="month">month</string>
+    <string name="months">months</string>
+    <string name="year">year</string>
+    <string name="years">years</string>
+    <string name="last_transaction">Last transaction:</string>
+    <string name="delete">Delete</string>
+
+    <!-- Errors -->
+    <string name="error_edit_amount">Please enter an amount</string>
+    <string name="error_edit_distance">Please enter a number of month/year</string>
+
+    <!-- Settings -->
+    <string name="accounts">Accounts</string>
+    <string name="manage_accounts">Manage your accounts</string>
+    <string name="backup">Backup data</string>
+    <string name="export_data">Export data</string>
+    <string name="import_data">Import data</string>
+
+    <!-- Toast -->
+    <string name="data_exported">Data exported successfully</string>
+    <string name="data_imported">Data imported successfully</string>
+
+    <string-array name="option_array">
+        <item>month</item>
+        <item>year</item>
+    </string-array>
+    <string-array name="chosse_image">
+        <item>Choose an image</item>
+        <item>Take a photo</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epsilon.coders.budgetbiulder.TransactionActionActivity"
+    android:background="@color/app_background">
+    
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12dp"/>
+
+        <ImageView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_done_white_48dp"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/blockCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:layout_marginLeft="6dp">
+
+        <RelativeLayout
+            android:id="@+id/iconAddTransaction"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/clearedAddTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"/>
+
+            <ImageView
+                android:id="@+id/categoryIconAddTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="31dp"/>
+
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_toRightOf="@id/iconAddTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"></Spinner>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blockCategory"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="@string/euro"
+        android:layout_centerHorizontal="true"
+        style="@style/customEditText.center"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/calendar"
+        android:layout_alignLeft="@+id/editComment"
+        android:layout_alignTop="@id/editAmount"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="showDatePickerDialog"/>
+
+    <EditText
+        android:id="@id/editComment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Comment"
+        android:layout_margin="15dp"
+        android:layout_below="@id/editAmount"
+        style="@style/customEditText"
+        android:inputType="textNoSuggestions|textCapSentences|textMultiLine"/>
+
+    <CheckBox
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repeat"
+        android:layout_below="@id/editComment"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/blockRecurring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/repeat"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/distanceOfRecurrence"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:hint="1"
+            style="@style/customEditText"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"/>
+
+        <Spinner
+            android:id="@+id/typeOfRecurrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blockNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blockRecurring"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_recurrence"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/numberOfRecurrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_number_of_recurrence"
+            android:inputType="number"
+            style="@style/customEditText"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
